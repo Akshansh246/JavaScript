@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-image: url(wyxina-tresse-V9W9ptOTL1I-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+:root{
+    --bg-color : #00030d;
+    --text-color : #4fa682;
+    --main-color : #000811;
+    --border : #00201f;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+}
+
+.header{
+    height: 10vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: var(--text-color);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+    position: fixed;
+    margin-bottom: 10px;
+    z-index: 1000;
+}
+
+.header img{
+    height: 5vmin;
+    width: 5vmin;
+    margin-left: 10px;
+}
+
+.fakeheader{
+    width: 100%;
+    height: 10vh;
+    background: none;
+}
+
+.panels{
+    width: 100%;
+    height:max-content;
+}
+
+.panel{
+    width: 95%;
+    height: 30vmin;
+    background-color: var(--main-color);
+    margin: 2.5%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel:hover{
+    transform: scale(1.04);
+    transition: 0.5s ease-in-out;
+}
+
+.cover img{
+    height: 25vmin;
+    width: 25vmin;
+    border-radius: 50%;
+    border: 5px solid var(--border);
+    margin-left: 10vmin;
+}
+
+.info{
+    height: 20vmin;
+    width: 80vmin;
+    /* background-color: var(--text-color); */
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vmin;
+}
+
+.info span{
+    text-align: center;
+    font-size: 4vmin;
+    color: #fff;
+}
+
+.info span:nth-child(2){
+    font-size: 3vmin;
+    color: var(--text-color);
+}
+
+.progress{
+    height: 1vmin;
+    width: 60vmin;
+    -webkit-appearance: none;
+    background-color: var(--text-color);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 4vmin;
+    width: 4vmin;
+    border-radius: 50%;
+    border: 0.8vmin solid var(--border);
+    background-color: var(--text-color);
+}
+
+.controls{
+    font-size: 7vmin;
+    color: var(--text-color);
+}
+
+.btn{
+    cursor: pointer;
+}
+
+.btn:nth-child(2){
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border-radius: 50%;
+    text-align: center;
+}
+
+.btn:nth-child(2):hover{
+    transform: scale(1.3);
+    transition: 0.5s ease-in-out;
+}
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum Calculator</title>
+    <style>
+        /* CSS for styling the form */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .calculator {
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        input[type="number"] {
+            margin: 5px 0;
+            padding: 8px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <h2>Sum Calculator</h2>
+        <input type="number" id="number1" placeholder="Enter first number">
+        <input type="number" id="number2" placeholder="Enter second number">
+        <button onclick="calculateSum()">Calculate Sum</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        // JavaScript function to calculate sum
+        function calculateSum() {
+            // Get the values of the two input fields
+            const num1 = parseFloat(document.getElementById('number1').value);
+            const num2 = parseFloat(document.getElementById('number2').value);
+
+            // Calculate the sum
+            const sum = num1 + num2;
+
+            // Display the result
+            document.getElementById('result').innerText = "Sum: " + sum;
+        }
+    </script>
+</body>
+</html>

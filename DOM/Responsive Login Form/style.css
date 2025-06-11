@@ -1,0 +1,130 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    transition: 1s ease-in-out;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Segoe UI';
+    background-image: url(wallpaperflare.com_wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.dark{
+    background-image: url(wallpaperflare.com_wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+.light{
+    background-image: url(wallpaperflare.com_wallpaper\ \(4\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    height: 10%;
+    width: 100%;
+    /* background-color: #1b0c1a; */
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.fakebar{
+    height: 7%;
+    width: 100%;
+}
+
+.modebtn{
+    height: 45px;
+    width: 110px;
+    border-radius: 40px;
+    margin: 20px;
+    font-weight: 700;
+    transition: 0.3s ease-in;
+}
+
+.modebtn:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 50px rgb(124, 117, 117),
+                0 0 100px rgb(124, 117, 117);
+}
+
+.content{
+    height: 93vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+
+.box{
+    height: 70vh;
+    width: 95vh;
+    background-color: #1b0c1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 50px;
+    box-shadow: 0 0 50px #1b0c1a,
+                0 0 100px #1b0c1a;
+}
+
+.dark-box{
+    background-color:  #1b0c1a;
+    color: white;
+}
+
+.light-box{
+    background-color: #4b98b3;
+    color: #1b0c1a;
+}
+
+h1{
+    color: white;
+    font-size: 50px;
+    text-shadow: 0 0 50px rgb(124, 117, 117),
+                 0 0 100px rgb(124, 117, 117);
+}
+
+.input{
+    height: 50px;
+    width: 500px;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #1b0c1a;
+    transition: 0.3s ease-in ;
+}
+
+.input:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 50px rgb(124, 117, 117);
+}
+
+.button{
+    height: 50px;
+    width: 100px;
+    margin-top: 20px;
+    border-radius: 30px;
+    color: #1b0c1a;
+    font-size: large;
+    font-weight: 700; 
+    border: 1px solid black;
+    transition: 0.3s ease-in-out;
+    background-color: white;
+}
+
+.button:hover{
+    /* background-color: rgb(33, 32, 32); */
+    transform: scale(1.05);
+    box-shadow: 0 0 50px rgb(124, 117, 117);
+}
