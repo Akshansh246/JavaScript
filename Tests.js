@@ -1,13 +1,22 @@
-class Person{
-    constructor(person){
-        this.person = {
-            name: person.name,
-            age: person.age
-        }
-    }
-}
+let arr = [1,2,"hello",true, false, 'this iss amazing'];
+let num = []
+let str = []
+let bool = [];
 
-person = new Person({
-    name: "John", 
-    age: 30
+arr.forEach((e) => {
+    if (typeof(e) === 'number') {
+        num.push(e)
+    }
+    else if (typeof(e) === 'boolean') {
+        bool.push(e)
+    }
+    else if (typeof(e) === 'string') {
+        str.push(e)
+    }
 });
+
+console.table({num, str, bool});
+
+
+
+
