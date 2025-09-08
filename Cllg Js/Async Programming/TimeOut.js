@@ -1,0 +1,17 @@
+setTimeout(()=>{
+    console.log('M');
+},2000);
+console.log('A');
+console.log('T');
+setTimeout(()=>{
+    console.log('F')
+},3000)
+setTimeout(()=>{
+    console.log('T')
+},4000)
+setTimeout(()=>{
+    console.log('J')
+},5000)
+setTimeout(()=>{
+    console.log('G')
+},6000)

@@ -1,0 +1,8 @@
+⚠️Browers have their own callstack, and timed functions are first pushed to the WebAPI then after their time is up they are pushed to the callback queue (📥), and when the callstack is empty the event loop (➿) pushes the first function from the callback queue to the callstack.
+    setTimeout(() => {
+        console.log("Timeout 1");
+    }, 0); 
+    console.log("Log 1");
+    Output: 
+        Log 1
+        Timeout 1         
