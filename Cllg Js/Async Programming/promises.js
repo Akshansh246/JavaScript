@@ -22,7 +22,3 @@ promise.then(function(result){
     });
 
 console.log(promise);   
-console.log("Promise is resolved 1 ✅");
-console.log("Promise is rejected 1 ✅");
-console.log("Promise is resolved 2 ✅");
-console.log("Promise is rejected 2 ✅");
