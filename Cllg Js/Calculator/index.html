@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatorr</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        *{
+            font-size: large;
+        }
+        button{cursor: pointer;}
+    </style>
+</head>
+<body class="bg-black flex items-center justify-center h-screen">
+    <main class="main flex flex-col gap-y-5 p-10">
+        <input type="text" class="bg-white w-full h-15">
+        <div class="w-fit gap-y-3 flex flex-col">
+            <div class="flex items-center justify-center gap-x-5">
+                <button class="bg-red-700 rounded-full w-15 h-15">C</button>
+                <button class="bg-yellow-500 rounded-full w-15 h-15">**</button>
+                <button class="bg-yellow-500 rounded-full w-15 h-15">%</button>
+                <button class="bg-yellow-500 rounded-full w-15 h-15">/</button>
+            </div>
+
+            <div class="flex items-center justify-center gap-x-5">
+                <button class="bg-white rounded-full w-15 h-15">9</button>
+                <button class="bg-white rounded-full w-15 h-15">8</button>
+                <button class="bg-white rounded-full w-15 h-15">7</button>
+                <button class="bg-yellow-500 rounded-full w-15 h-15">*</button>
+            </div>
+
+            <div class="flex items-center justify-center gap-x-5">
+                <button class="bg-white rounded-full w-15 h-15">6</button>
+                <button class="bg-white rounded-full w-15 h-15">5</button>
+                <button class="bg-white rounded-full w-15 h-15">4</button>
+                <button class="bg-yellow-500 rounded-full w-15 h-15">+</button>
+            </div>
+
+            <div class="flex items-center justify-center gap-x-5">
+                <button class="bg-white rounded-full w-15 h-15">3</button>
+                <button class="bg-white rounded-full w-15 h-15">2</button>
+                <button class="bg-white rounded-full w-15 h-15">1</button>
+                <button class="bg-yellow-500 rounded-full w-15 h-15">-</button>
+            </div>
+
+            <div class="flex items-center justify-between">
+                <button class="bg-white rounded-full w-35 h-15">0</button>
+                <button class="bg-white rounded-full w-15 h-15">.</button>
+                <button class="bg-yellow-500 rounded-full w-15 h-15">=</button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
